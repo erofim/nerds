@@ -1,0 +1,34 @@
+{
+  "name": "nerds",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^16"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "lint": "npm run editorconfig",
+    "build": "echo 'Build task'",
+    "start": "echo 'Start task'"
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/**/*.html",
+    "source/**/*.{pug,twig}",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "2.0.5",
+    "stylelint": "15.10.2",
+    "stylelint-config-htmlacademy": "2.0.4"
+  }
+}
